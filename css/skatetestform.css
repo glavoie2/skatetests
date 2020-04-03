@@ -1,0 +1,60 @@
+body {
+    font-family: arial;
+    font-size: 10px;
+    margin: 0px 0px;
+}
+
+hr{
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+table{
+    font-family: arial;
+    border-style: none;
+}
+
+
+table.t1{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333333;
+
+}
+
+ul li {
+    margin-left: 50em;
+}
+
+.italic{
+    font-style:italic;
+}
+
+.exigence{
+    font-size: 10px;
+}
+
+.shade{
+    font-size: 10px;
+    color: #cccccc;
+}
+
+.verysmall{
+    font-size: 9px;
+}
+
+.title1{
+    font-size: 16px;
+    font-weight:bold;
+	padding: 3px;
+	background: #000000;
+    color: white;
+}
+
+
+.box1 {float:right; padding:4px; width:65px; border:2px solid #333333;}
+.box2 {float:left; padding:1px; width:80px; border-bottom:1px solid #333333;}
+
+@media print {
+	.noprint { display: none; }
+}

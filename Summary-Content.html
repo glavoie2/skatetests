@@ -1,0 +1,35 @@
+<table class="t1" cellspacing="0" cellpadding="0" width="780">
+<tr>
+    <td>
+    <table border="1" cellspacing="0" cellpadding="2" width="100%">
+    <tr>
+        <td width="180" align="center"><div style="color:#CECED9;"><?php echo $labelnoskatecan; ?></div>
+        <?php echo $nationalno; ?></td>
+        <td width="150" align="center"><div style="color:#CECED9;"><?php echo $labelhomeorgname; ?></div>
+        <?php echo $candidateclub; ?></td>
+        <td width="160" align="center"><div style="color:#CECED9;"><?php echo $labelofficialno; ?></div>
+        <?php echo $officialno; ?></td>
+        <td width="190" align="center"><div style="color:#CECED9;"><?php echo $labeltestcode; ?></div>
+        <?php echo $patcancode; ?></td>
+        <td width="100" align="center"><div style="color:#CECED9;"><?php echo $labeldateformat; ?></div>
+        <?php echo $testdate; ?></td>
+    </tr>
+    <tr>
+        <td align="center"><div style="color:#CECED9;"><?php echo $labelname; ?></div>
+        <?php echo $candidate; ?></td>
+        <td align="center"><div style="color:#CECED9;"><?php echo $labelhomeorgno; ?></div>
+        <?php echo $candidateclubno; ?></td>
+        <td align="center"><div style="color:#CECED9;"><?php echo $labelofficial; ?></div>
+        <?php if (strlen($official)>0) echo $official." (#".$officialindex.")"; else echo "1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5"; ?></td>
+        <td align="center"><?php echo $labelsucces; ?>&nbsp;&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <?php echo $labelfailed; ?>&nbsp;&nbsp;<img src="images/checkbox.gif" width="15" height="15"/></td>
+        <td align="center"><div style="color:#CECED9;"><?php echo $labelfee; ?></div>
+        <?php echo $header->unitcost; ?> $</td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<br/>
+
+

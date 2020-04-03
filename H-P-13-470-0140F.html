@@ -1,0 +1,283 @@
+<!-- TEST HABILETÉS PRÉLIMINAIRE -->
+<?php
+if ($language == 'En'){
+    $labeltitle = 'PRELIMINARY SKATING SKILLS EVALUATION SHEET';
+    $labeltxt00 = 'Three exercises to be skated. For C, three draws will be made to determine the direction (CW/CCW), edge (O/I) and if the exercise will be skated forward or backward. One exercise may be reskated if necessary.';
+    $labeltxt01 = '<strong>CONSIDER: Edge Quality, Ice Coverage, Ease of Motion, Correctness of Steps, Posture</strong>';
+    $labeltxt10 = 'A: Waltzing Threes';
+    $labeltxt11 = 'FOCUS: Control in Forward 3s';
+    $labeltxt20 = '<strong>B: Waltzing Mohawks</strong>';
+    $labeltxt21 = 'FOCUS: Power<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agility';
+    $labeltxt30 = '<strong>C : Preliminary Circles</strong>';
+    $labeltxt31 = 'FOCUS: Edge Quality<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Balance';
+    $labeltxt32 = '<br/><br/><br/><br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 of';
+    $labeltxt32a = 'RFO (CW)';
+    $labeltxt32b = 'LFO (CCW)';
+    $labeltxt32c = 'RFI (CCW)';
+    $labeltxt32d = 'LFI (CW)';
+    $labeltxt32e = 'LBO (CW)';
+    $labeltxt32f = 'RBO (CCW)';
+    $labeltxt32g = 'LBI (CCW)';
+    $labeltxt32h = 'RBI (CW)';
+    $labelrequirement = 'Passing Requirement: 3/3 Exercises must be <span class="italic">Satisfactory</span>  or better';
+    $labelcatalog = 'Catalogue 13-470-0140E (August 2010)';
+}
+else{
+    $labeltitle = 'TEST PRÉLIMINAIRE DES HABILETÉS DE PATINAGE – FEUILLE D’ÉVALUATION';
+    $labeltxt00 = 'Trois exercices à patiner. Il faut effectuer trois tirages au sort pour l’exercice C afi n de déterminer: 1) la direction (SAM/SCAM), 2) la carre(I/E) et 3) le patinage avant ou arrière. Les candidats peuvent reprendre un exercice, au besoin.';
+    $labeltxt01 = '<strong>TENIR COMPTE DE : la qualité de la courbe, la couverture de la glace, l’aisance du mouvement, l’exactitude des pas, et la posture.</strong>';
+    $labeltxt10 = 'A : Trois valsés';
+    $labeltxt11 = 'OBJET : Maîtrise des virages<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trois avant';
+    $labeltxt20 = '<strong>B : Mohawks valsés</strong>';
+    $labeltxt21 = 'OBJET : Puissance<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agilité';
+    $labeltxt30 = '<strong>C : Cercles préliminaires</strong>';
+    $labeltxt31 = 'OBJET : Qualité<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;des courbes<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Équilibre';
+    $labeltxt32 = '<br/><br/><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Un au choix :';
+    $labeltxt32a = 'DAVE (SAM)';
+    $labeltxt32b = 'GAVE (SCAM)';
+    $labeltxt32c = 'DAVI (SCAM)';
+    $labeltxt32d = 'GAVI (SAM)';
+    $labeltxt32e = 'GARE (SAM)';
+    $labeltxt32f = 'DARE (SCAM)';
+    $labeltxt32g = 'GARI (SCAM)';
+    $labeltxt32h = 'DARI (SAM)';
+    $labelrequirement = 'Conditions de réussite : <span class="italic">Satisfaisant</span> ou mieux pour les 3 exercices.';
+    $labelcatalog = 'Catalogue 13-470-0140F (Juillet 2010)';
+}
+include 'ST-HEADER-C.html';
+?>
+
+<table border="0" cellspacing="0" cellpadding="1" width="780">
+<tr>
+    <td width="40" valign="top"><br/><br/><br/><img src="<?php echo $imagecandidatecopy; ?>" width="20" height="280"/></td>
+    <td>
+    <table border="0" cellspacing="0" cellpadding="3" width="740">
+    <tr>
+        <td colspan="2" align="center"><strong><?php echo $labeltitle; ?></strong></td>
+        <td rowspan="3" valign="top">
+        <table  align="right" border="0" cellspacing="0" cellpadding="0" width="100">
+        <tr>
+            <td>&nbsp;</td>
+            <td align="right"><?php echo $testdate; ?></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td align="right"><?php echo $labeldateformat; ?></td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>
+        <table border="0" cellspacing="0" cellpadding="1" width="100%">
+        <tr>
+            <td><?php echo $labelcandidate; ?></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $nationalno." - ".$candidate; ?></strong></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><hr width="230"/></td>
+        </tr>
+        </table>
+        </td>
+        <td>
+        <table border="0" cellspacing="0" cellpadding="1" width="100%">
+        <tr>
+            <td><?php echo $labelofficial; ?></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $official; ?></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><hr width="230"/></td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+
+    <table border="1" cellspacing="0" cellpadding="3" width="740">
+    <tr>
+        <td>
+        <table border="0" cellspacing="0" cellpadding="1">
+        <tr>
+            <td width="35">&nbsp;</td>
+            <td width="150"><strong><?php echo $labelresultcode1txt; ?></strong></td>
+            <td width="125"><strong><?php echo $labelresultcode2txt; ?></strong></td>
+            <td width="175"><strong><?php echo $labelresultcode3txt; ?></strong></td>
+            <td width="225"><strong><?php echo $labelresultcode4txt; ?></strong></td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+    <br/>
+
+    <p><?php echo $labeltxt00; ?></p>
+
+    <p><?php echo $labeltxt01; ?></p>
+    <br/>
+
+    <table border="1" cellspacing="0" cellpadding="7" width="740">
+    <tr>
+        <td colspan="2" width="180"><?php echo $labelexercises; ?></td>
+        <td width="20" align="center"><?php echo $labelresultcode1; ?></td>
+        <td width="20" align="center"><?php echo $labelresultcode2; ?></td>
+        <td width="20" align="center"><?php echo $labelresultcode3; ?></td>
+        <td width="20" align="center"><?php echo $labelresultcode4; ?></td>
+        <td width="340" align="center"><?php echo $labelcomments; ?></td>
+    </tr>
+    <tr>
+        <td colspan="2"><strong><?php echo $labeltxt10; ?></strong><br/><br/>
+            <table border="1" cellspacing="0" cellpadding="5" width="160">
+            <tr>
+                <td align="left"><?php echo $labeltxt11; ?></td>
+            </tr>
+            </table><br/>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="2"><?php echo $labeltxt20; ?><br/><br/>
+            <table border="1" cellspacing="0" cellpadding="5" width="160">
+            <tr>
+                <td align="left"><?php echo $labeltxt21; ?></td>
+            </tr>
+            </table><br/>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td width="160" rowspan="9" valign="top">
+            <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td width="130" valign="top"><?php echo $labeltxt30; ?><br/><br/>
+                    <table border="1" cellspacing="0" cellpadding="5" width="100%">
+                    <tr>
+                        <td align="left"><?php echo $labeltxt31; ?></td>
+                    </tr>
+                    </table>
+                    <?php echo $labeltxt32; ?></td>
+                <td><img src="images/choix1.png" /></td>
+            </tr>
+            </table>
+        </td>
+        <td width="80"><div class="exigence"><?php echo $labeltxt32a; ?></div></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><div class="exigence"><?php echo $labeltxt32b; ?></div></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><div class="exigence"><?php echo $labeltxt32c; ?></div></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><div class="exigence"><?php echo $labeltxt32d; ?></div></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><div class="exigence"><?php echo $labeltxt32e; ?></div></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><div class="exigence"><?php echo $labeltxt32f; ?></div></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><div class="exigence"><?php echo $labeltxt32g; ?></div></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td><div class="exigence"><?php echo $labeltxt32h; ?></div></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+    <br/>
+    
+    <table border="0" cellspacing="0" cellpadding="1" width="740">
+    <tr>
+        <td valign="top">
+        <table border="1" cellspacing="0" cellpadding="5" width="370">
+        <tr>
+            <td><div class="exigence"><?php echo $labelrequirement; ?></div></td>
+        </tr>
+        </table>
+        </td>
+        <td>
+        <table border="0" cellspacing="0" cellpadding="5" width="257">
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+        </table>
+        </td>
+        <td valign="top">
+        <table border="1" cellspacing="0" cellpadding="5" width="110">
+        <tr>
+            <td><strong>TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/3</strong></td>
+        </tr>
+        <tr>
+            <td><strong><?php echo $labelresult; ?></strong></td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+<?php
+if ($ua['name'] == "Mozilla Firefox") addBR(3);
+else addBR(5);
+?>
+    <table border="0" width="98%">
+        <tr><td><?php echo $labelcatalog; ?></td><td><strong><?php echo $labelofficialnotes; ?></strong></td><td align="right"><?php echo $page; ?></td></tr>
+    </table>
+    </td>
+</tr>
+</table>

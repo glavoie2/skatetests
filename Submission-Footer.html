@@ -1,0 +1,95 @@
+<?php 
+if ($language == 'En'){
+    $labelreceived = 'Received:';
+    $labeldateentered = 'Data Entered:';
+    $labelinitials = 'Initials: __________________';
+    $labelindivtestnbr = 'Number of Individual Tests';
+    $labelforeignfeenbr = 'Number of Foreign Fees';
+    $labelgoldchalengenbr = 'Number of Gold Challenge Tests';
+    
+    $labeltestsfee = 'Test Fees';
+    $labeltestsfee1a = 'STARSkate test fees are ';
+    $labeltestsfee1b = '$ per individual test';
+    $labeltestsfee2 = 'Additional Fees';
+    $labeltestsfee3 = 'Gold Challenge Tests (Dance and Free Skate): $60.00 per individual test';
+    $labeltestsfee4a = 'Gold Interpretive Challenge: ';
+    $labeltestsfee4b = '$ for any lower level Interpretive test not previously achieved';
+    $labeltestsfee5 = 'Foreign Skaters: $30.00 per individual test';
+}
+else{
+    $labelreceived = 'Reçu :';
+    $labeldateentered = 'Données saisies :';
+    $labelinitials = 'Initiales: __________________';
+    $labelindivtestnbr = 'Nombre de tests individuels';
+    $labelforeignfeenbr = 'Nombre de droits étrangés';
+    $labelgoldchalengenbr = 'Nombre de tests de défi or';
+    
+    $labeltestsfee = 'Droits de tests';
+    $labeltestsfee1a = 'Les droits de tests de Patinage STAR sont de ';
+    $labeltestsfee1b = '$ pour chaque test.';
+    $labeltestsfee2 = 'Droits supplémentaires';
+    $labeltestsfee3 = 'Test défi or (danse et style libre) : 60.00$ pour chaque test';
+    $labeltestsfee4a = 'Défi du test or d’interprétation : ';
+    $labeltestsfee4b = '$ pour tout test d’interprétation non antérieurement réussi';
+    $labeltestsfee5 = 'Patineurs étrangers : 30.00$ pour chaque test';
+}
+ ?>
+<strong><?php echo $labeltestsfee; ?></strong><br/>
+<?php echo $labeltestsfee1a.number_format($header->unitcost, 2, '.', ' ').$labeltestsfee1b; ?><br/>
+<br/>
+<strong><?php echo $labeltestsfee2; ?></strong><br/>
+<?php echo $labeltestsfee3; ?><br/>
+<?php echo $labeltestsfee4a.number_format($header->unitcost, 2, '.', ' ').$labeltestsfee4b; ?><br/>
+<?php echo $labeltestsfee5; ?><br/>
+<br/>
+<br/>
+<br/>
+
+<img width="780" height="21" src="<?php echo $imgsubmissiontestofficialusage; ?>">
+<table border="1" cellspacing="0" cellpadding="4" width="780">
+<tr>
+    <td rowspan="3" width="530">
+    <table border="0" width="100%">
+    <tr>
+        <td colspan="2"><?php echo $labelreceived; ?></td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+    </tr>
+    </tr>
+        <td><?php echo $labeldateentered; ?></td>
+        <td align="right"><?php echo $labelinitials; ?></td>
+    </tr>
+    </table>
+    </td>
+    <td width="170"><?php echo $labelindivtestnbr; ?></td>
+    <td width="80"></td>
+</tr>
+<tr>
+    <td><?php echo $labelforeignfeenbr; ?></td>
+    <td></td>
+</tr>
+<tr>
+    <td><?php echo $labelgoldchalengenbr; ?></td>
+    <td></td>
+</tr>
+</table>
+<br/>
+<br/>
+<?php echo $labelsendsummaryform; ?><br/><br/>
+<?php echo $labelkeepacopy; ?><br/>
+<?php
+if ($ua['name'] == "Mozilla Firefox") addBR(5);
+else addBR(8);
+?>
+<table border="0" cellspacing="0" cellpadding="3" width="780">
+<tr>
+    <td width="315"></td>
+    <td><img src="<?php echo $imgpatcanlogo; ?>" width="100" height="60"></td>
+    <td width="315" valign="top" align="right"><strong><?php echo $labelformrevisiondate; ?></strong></td>
+</tr>
+</table>
+<br/>
+
+</body>
+</html>

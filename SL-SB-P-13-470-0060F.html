@@ -1,0 +1,338 @@
+<!-- TEST STYLE LIBRE SENIOR BRONZE PROGRAMME -->
+<?php
+if ($language == 'En'){
+    $labeltitle = 'SENIOR BRONZE FREE SKATING TEST EVALUATION';
+    $labeltxt00 = '<strong>PROGRAM (2:00 or 2:30 minutes ± 10 seconds)</strong>';
+    $labelresultcode1 = '<div class="exigence"><strong>E</strong><br/>(+)</div>';
+    $labelresultcode2 = '<div class="exigence"><strong>G</strong><br/>(0)</div>';
+    $labelresultcode3 = '<div class="exigence"><strong>S</strong><br/>(-1)</div>';
+    $labelresultcode4 = '<div class="exigence"><strong>NI</strong><br/>(-2/-3)</div>';
+    $labeltxt01 = '<strong>JUMPS</strong><br/><br/>
+                Maximum of six jump elements.<br/>
+                Must include at least one Axel type jump (waltz or Axel) and one double jump.<br/>
+                Max three combinations or sequences. Jump<br/>
+                combinations may contain no more than two jumps.<br/>
+                No jump included more than twice and if a jump is repeated it must be in combination or sequence.';
+    $labeltxt10 = '<strong>SPINS</strong><br/><br/>
+            Maximum of three spins.<br/>
+            One combination spin, change of foot mandatory (min three revs/foot and min two revs/position)<br/>
+            One flying spin (min three revs in basic position)<br/>
+            One spin of any nature (min four revs total)';
+    $labeltxt20 = '<strong>STEP/ SPIRAL /CHOREO SEQUENCE</strong>';
+    $labelrequirement1 = '<strong><u>Mandatory Pass Element:</u></strong> The program must include at least one double jump evaluated at Satisfactory or better†';
+    $labelrequirement2 = '<strong><u>Passing Requirement:</u></strong><br/> 8/10 criteria must be Satisfactory or better including (<u>6/8 if program contains 5 jumps, 2 spins</u>):<br/>
+                *5 jump criteria (<u>4 jump criteria if 5 jumps in program</u>)<br/>
+                *2 spin criteria (<u>combination spin must be satisfactory or better if only 2 spins in program</u>)';
+    $labelfinalresultscore2 = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/10</strong> (if 6 jumps, 3 spins)<br/><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/8</strong> (if 5 jumps, 2 spins)';
+    $labelcriteria2 = '<strong>Program Component Criteria</strong>';
+    $labelresultcode1b = '<div class="exigence"><strong>E</strong><br/>2.25+</div>';
+    $labelresultcode2b = '<div class="exigence"><strong>G</strong><br/>2.00+</div>';
+    $labelresultcode3b = '<div class="exigence"><strong>S</strong><br/>1.50+</div>';
+    $labelresultcode4b = '<div class="exigence"><strong>NI</strong><br/>&lt;1.50</div>';
+    $labeltxt30 = '*Skating Skills';
+    $labeltxt31 = 'Transitions';
+    $labeltxt32 = '*Performance/ Execution';
+    $labeltxt33 = 'Choreography';
+    $labeltxt34 = 'Interpretation';
+    $labelrequirement3 = '<strong><u>Passing Requirement:</u></strong> 3/5 criteria must be Satisfactory or better including:<br/>
+                       *Skating Skills and *Performance/ Execution';
+    $labelfinalresult3 = '<strong>FINAL TEST RESULT:</strong> 11/15 criteria must be Satisfactory or better and all three passing requirements must be successfully attained to pass the test if 6 jumps and 3 spins are in the program<br/>
+                        <strong>FINAL TEST RESULT:</strong> <u>9/13 criteria must be Satisfactory or better and all three passing requirements must be successfully attained to pass the test if 5 jumps and 2 spins are in the program';
+    $labelfinalresultscore3 = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/15</strong> (6 jumps, 3 spins)</u><br/><br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/13</strong> (5 jumps, 2 spins)';
+    $footnote1 = '† Note – a double jump executed (with no more than ¼ rotation lacking) as the first jump in a combination or sequence with errors on the second jump will count as meeting the requirement of the double jump evaluated at satisfactory or better regardless of the evaluation of the element';
+    $labelcatalog = 'Catalogue 13-470-0060E (Draft July 2015)';
+    
+}
+else{
+    $labeltitle = 'TEST SENIOR BRONZE DE STYLE LIBRE – FEUILLE D’ÉVALUATION';
+    $labeltxt00 = '<strong>PARTIE 2 : PROGRAMME (2:00 ou 2:30 minutes ± 10 secondes)</strong>';
+    $labelresultcode1 = '<div class="exigence"><strong>E</strong><br/>(+)</div>';
+    $labelresultcode2 = '<div class="exigence"><strong>B</strong><br/>(0)</div>';
+    $labelresultcode3 = '<div class="exigence"><strong>S</strong><br/>(-1)</div>';
+    $labelresultcode4 = '<div class="exigence"><strong>BA</strong><br/>(-2/-3)</div>';
+    $labeltxt01 = '<strong>SAUTS</strong><br/>
+            Six éléments de sauts au maximum.<br/>
+            Doit comprendre au moins un saut de type
+            Axel (de valse ou Axel) et un saut double.
+            Trois combinaisons ou séquences de sauts
+            au maximum.<br/>Les combinaisons de sauts ne
+            peuvent contenir plus de deux sauts.<br/>
+            Aucun saut ne peut être exécuté plus de deux
+            fois et s’il est répété, il doit l’être dans une
+            combinaison ou une séquence de sauts.';
+    $labeltxt10 = '<strong>PIROUETTES</strong><br/>
+            Trois pirouettes au maximum.<br/>
+            Une pirouette combinée, changement de pied
+            obligatoire (au moins 3 rév. sur chaque pied
+            et au moins 2 rév. révolutions dans chaque
+            position).<br/>
+            Une pirouette sautée (au moins 3 rév. dans
+            une position de base).
+            Une pirouette d’une autre nature (au moins 4
+            rév. au total).';
+    $labeltxt20 = '<strong>SÉQUENCE DE PAS/SÉQUENCE DE PAS EN POSITION ARABESQUE</strong>';
+    $labelrequirement1 = '<strong>Réussite obligatoire de l’élément suivant :</strong> le programme doit contenir au moins un saut double évalué <span class="italic">satisfaisant</span> ou mieux †';
+    $labelrequirement2 = 'Exigences requises pour réussir :</strong> <span class="italic">satisfaisant</span> ou mieux pour 8 des 10 critères (dont 6 des 8 critères si le programme contient 5 sauts et 2 pirouettes) :<br/>
+                        *5 critères de 5 sauts (4 critères de saut si le programme compte 5 sauts)<br/>
+                        *2 critères de pirouette (la pirouette combinée doit être satisfaisante ou mieux si le programme ne contient que 2 pirouettes)';
+    $labelfinalresultscore2 = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/10</strong> (si 6 sauts, 3 pirouettes)<br/><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/8</strong> (si 5 sauts, 2 pirouettes)';
+    $labelcriteria2 = '<strong>Critères pour les composantes de programme</strong>';
+    $labelresultcode1b = '<div class="exigence"><strong>E</strong><br/>&ge;2,25</div>';
+    $labelresultcode2b = '<div class="exigence"><strong>B</strong><br/>&ge;2,00</div>';
+    $labelresultcode3b = '<div class="exigence"><strong>S</strong><br/>&ge;1,50</div>';
+    $labelresultcode4b = '<div class="exigence"><strong>BA</strong><br/>&lt;1,50</div>';
+    $labeltxt30 = '*Habiletés de patinage';
+    $labeltxt31 = 'Transitions';
+    $labeltxt32 = '*Performance/exécution';
+    $labeltxt33 = 'Chorégraphie';
+    $labeltxt34 = 'Interprétation';
+    $labelrequirement3 = '<strong>Exigences requises pour réussir :</strong> <span class="italic">Satisfaisant</span> ou mieux pour 3 des 5 critères, dont :<br/>
+                        <strong>*</strong>les habiletés de patinage et <strong>*</strong>la performance/l’exécution';
+    $labelfinalresult3 = '<strong>RÉSULTAT FINAL DU TEST :</strong> <span class="italic">Satisfaisant</span> ou mieux pour 11 des 15 critères. Les trois exigences requises pour réussir doivent être remplies pour que le test soit réussi.<br/>
+                        <strong>RÉSULTAT FINAL DU TEST :</strong> <span class="italic">Satisfaisant</span> ou mieux pour 9 des 13 critères. Les trois exigences de réussite doivent être remplies pour réussir le test si le programme contient 5 sauts et 2 pirouettes.';
+    $labelfinalresultscore3 = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/15</strong> (6 sauts, 3 pirouettes)<br/><br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>/13</strong> (5 sauts, 2 pirouettes)';
+    $footnote1 = '†Remarque – Le double saut (auquel il ne manque qu’un quart de rotation) exécuté avec succès comme premier saut d’une combinaison ou d’une séquence de sauts qui contient des erreurs dans le second saut, sera considéré comme remplissant l’exigence de double saut évalué satisfaisant ou mieux, peu importe l’évaluation faite de l’ensemble de l’élément.';
+    $labelcatalog = 'Catalogue 13-470-0060F (Ébauche Juillet 2015)';
+}
+
+if ($ua['name'] == "Mozilla Firefox") $cellpadding=4;
+elseif ($ua['name'] == "Google Chrome") $cellpadding=5;
+else $cellpadding=6;
+
+$cellpadding1=$cellpadding-1;
+
+include 'ST-HEADER-C.html';
+?>
+
+<table border="0" cellspacing="0" cellpadding="1" width="780">
+<tr>
+    <td width="40" valign="top"><br/><br/><br/><img src="<?php echo $imagecandidatecopy; ?>" width="20" height="280"/></td>
+    <td>
+    <table border="0" cellspacing="0" cellpadding="2" width="740">
+    <tr>
+        <td colspan="2" align="center"><strong><?php echo $labeltitle; ?></strong>></td>
+        <td rowspan="3" valign="top">
+        <table  align="right" border="0" cellspacing="0" cellpadding="0" width="100">
+        <tr>
+            <td>&nbsp;</td>
+            <td align="right"><?php echo $testdate; ?></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td align="right"><?php echo $labeldateformat; ?></td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <table border="0" cellspacing="0" cellpadding="1" width="100%">
+        <tr>
+            <td><?php echo $labelcandidate; ?></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $nationalno." - ".$candidate; ?></strong></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><hr width="230"/></td>
+        </tr>
+        </table>
+        </td>
+        <td>
+        <table border="0" cellspacing="0" cellpadding="1" width="100%">
+        <tr>
+            <td><?php echo $labelofficial; ?></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $official; ?></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><hr width="230"/></td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+
+    <?php echo $labeltxt00; ?>
+
+    <table border="1" cellspacing="0" cellpadding="<?php echo $cellpadding; ?>" width="740">
+    <tr>
+        <td width="300"><div class="exigence"><strong><?php echo $labelcriteria1; ?></strong><div/></td>
+        <td width="100"></td>
+        <td width="20" align="center"><?php echo $labelresultcode1; ?></td>
+        <td width="20" align="center"><?php echo $labelresultcode2 ?></td>
+        <td width="20" align="center"><?php echo $labelresultcode3 ?></td>
+        <td width="20" align="center"><?php echo $labelresultcode4 ?></td>
+        <td width="340" align="center"><?php echo $labelcomments; ?></td>
+    </tr>
+    <tr>
+        <td rowspan="6" width="300"><div class="exigence"><?php echo $labeltxt01; ?></div>
+        </td>
+        <td width="100"><div class="exigence">1.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td rowspan="10" width="320"></td>
+    </tr>
+    <tr>
+        <td width="100"><div class="exigence">2.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    <tr>
+        <td width="100"><div class="exigence">3.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    <tr>
+        <td width="100"><div class="exigence">4.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    <tr>
+        <td width="100"><div class="exigence">5.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    <tr>
+        <td width="100"><div class="exigence">6.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    <tr>
+        <td rowspan="3" width="300"><div class="exigence"><?php echo $labeltxt10; ?></div>
+        </td>
+        <td width="100"><div class="exigence">1.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    <tr>
+        <td width="100"><div class="exigence">2.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    <tr>
+        <td width="100"><div class="exigence">3.</div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    <tr>
+        <td width="300" valign="top" colspan="2"><div class="exigence"><?php echo $labeltxt20; ?></div></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+        <td width="20"></td>
+    </tr>
+    </table>
+
+    <table border="1" cellspacing="0" cellpadding="<?php echo $cellpadding1; ?>" width="740">
+    <tr>
+        <td colspan="2" width="550"><div class="exigence"><?php echo $labelrequirement1; ?></div></td>
+        <td width="110" align="center"><div class="exigence">&nbsp;&nbsp;&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;<?php echo $labelyes; ?>&nbsp;&nbsp;&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;&nbsp;&nbsp;<?php echo $labelno; ?>&nbsp;</div></td>
+    </tr>
+    </table>
+    <table border="1" cellspacing="0" cellpadding="<?php echo $cellpadding1; ?>" width="740">
+    <tr>
+        <td width="500"><div class="exigence"><?php echo $labelrequirement2; ?></div></td>
+        <td width="160" align="center"><?php echo $labelfinalresultscore2; ?></td>
+        <td width="80" align="center"><div class="exigence">&nbsp;&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;<?php echo $labelyes; ?><br/><br/>&nbsp;&nbsp;&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;<?php echo $labelno; ?>&nbsp;</div></td>
+    </tr>
+    </table>
+    
+    <table border="1" cellspacing="0" cellpadding="<?php echo $cellpadding; ?>" width="740">
+    <tr>
+        <td width="300"><div class="exigence"><?php echo $labelcriteria2; ?></div></td>
+        <td width="30" align="center"><?php echo $labelresultcode1b; ?></td>
+        <td width="30" align="center"><?php echo $labelresultcode2b; ?></td>
+        <td width="30" align="center"><?php echo $labelresultcode3b; ?></td>
+        <td width="30" align="center"><?php echo $labelresultcode4b; ?></td>
+        <td width="380" align="center"><?php echo $labelcomments; ?></td>
+    </tr>
+    <tr>
+        <td width="300"><div class="exigence"><?php echo $labeltxt30; ?></div></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td rowspan="5" width="380" align="center"></td>
+    </tr>
+    <tr>
+        <td width="300"><div class="exigence"><?php echo $labeltxt31; ?></div></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+    </tr>
+    <tr>
+        <td width="300"><div class="exigence"><?php echo $labeltxt32; ?></div></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+    </tr>
+    <tr>
+        <td width="300"><div class="exigence"><?php echo $labeltxt33; ?></div></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+    </tr>
+    <tr>
+        <td width="300"><div class="exigence"><?php echo $labeltxt34; ?></div></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+        <td width="30" align="center"></td>
+    </tr>
+    </table>
+
+    <table border="1" cellspacing="0" cellpadding="<?php echo $cellpadding1; ?>" width="740">
+    <tr>
+        <td width="430"><div class="exigence"><?php echo $labelrequirement3; ?></div></td>
+        <td width="100" align="center"><strong>/5</strong></td>
+        <td width="210" align="center"><div class="exigence">&nbsp;&nbsp;&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;<?php echo $labelyes; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;&nbsp;&nbsp;<?php echo $labelno; ?>&nbsp;</div></div></td>
+    </tr>
+    </table>
+    <table border="1" cellspacing="0" cellpadding="<?php echo $cellpadding; ?>" width="740">
+    <tr>
+        <td width="460"><div class="exigence"><?php echo $labelfinalresult3; ?></div></td>
+        <td width="150" align="center"><?php echo $labelfinalresultscore3; ?></td>
+        <td width="90" align="center"><div class="exigence">&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;&nbsp;&nbsp;<?php echo $labelsuccess; ?><br/><br/>&nbsp;<img src="images/checkbox.gif" width="15" height="15"/>&nbsp;&nbsp;&nbsp;<?php echo $labelretake; ?>&nbsp;</div></td>
+    </tr>
+    </table>
+
+    <div class="verysmall"><?php echo $footnote1; ?></div>
+<?php
+if ($ua['name'] == "Mozilla Firefox") addBR(0);
+else addBR(1);
+?>
+    <table border="0" cellspacing="0" cellpadding="0" width="97%">
+        <tr><td><?php echo $labelcatalog; ?></td><td><strong><?php echo $labelofficialnotes; ?></strong></td><td align="right"><?php echo $page; ?></td></tr>
+    </table>
+    </td>
+</tr>
+</table>

@@ -1,0 +1,105 @@
+ul.cssmnu{
+	float:left;
+	width:100%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+a.cssmnu{
+	float:left;
+	width:6em;
+    font-weight: bold;
+	text-decoration:none;
+	color:lightgray;
+	background-color:gray;;
+	padding:0.2em 0.6em;
+	border-right:1px solid white;
+}
+a.cssmnu:hover {
+	background-color:black;
+	color:white;
+	text-decoration:none;
+}
+li.cssmnu{
+	display:inline;
+}
+
+A.mnu:link {
+    COLOR: #6f6f6f;
+    FONT-STYLE: Normal;
+    TEXT-DECORATION: none;
+}
+A.mnu:visited {
+    COLOR: #6f6f6f;
+    FONT-STYLE: normal;
+    TEXT-DECORATION: none;
+}
+A.mnu:active {
+    COLOR: #6f6f6f;
+    FONT-STYLE: Normal;
+    TEXT-DECORATION: none;
+}
+A.mnu:hover {
+    COLOR: #000000;
+    FONT-STYLE: Normal;
+    TEXT-DECORATION: none;
+}
+p.mnu {
+    COLOR: #6f6f6f;
+    FONT-STYLE: Normal;
+    TEXT-DECORATION: none;
+}
+TD.button-left {
+    FONT-SIZE: 12px;
+    BACKGROUND: url(../images/menu-side.gif) no-repeat left bottom;
+    COLOR: #ffffff;
+    FONT-FAMILY: arial;
+}
+TD.button-right {
+    FONT-SIZE: 12px;
+    BACKGROUND: url(../images/menu-side.gif) no-repeat right bottom;
+    COLOR: #ffffff;
+    FONT-FAMILY: arial;
+}
+TD.button-up {
+    FONT-SIZE: 12px;
+    BACKGROUND: url(../images/menu_up.gif) no-repeat right bottom;
+    COLOR: #ffffff;
+    FONT-FAMILY: arial;
+}
+TD.button-down {
+    FONT-SIZE: 12px;
+    BACKGROUND: url(../images/menu_dn.gif) no-repeat right bottom;
+    COLOR: #ffffff;
+    FONT-FAMILY: arial;
+}
+TD.menu-tiled {
+    BACKGROUND: url(../images/backgr_menu.gif) 50% bottom;
+}
+#dropmenudiv {
+    Z-INDEX: 100;
+    FONT: 12px/18px arial;
+    COLOR: #6f6f6f;
+    POSITION: absolute;
+    BACKGROUND-COLOR: #000000;
+}
+#dropmenudiv A {
+    PADDING-RIGHT: 0px;
+    DISPLAY: block;
+    PADDING-LEFT: 0px;
+    FONT-WEIGHT: normal;
+    PADDING-BOTTOM: 1px;
+    WIDTH: 100%;
+    TEXT-INDENT: 3px;
+    PADDING-TOP: 1px;
+    COLOR: #6f6f6f;
+    BACKGROUND-COLOR: #eeeeee;
+    TEXT-DECORATION: none;
+}
+#dropmenudiv A:hover {
+    COLOR: #000000;
+    BACKGROUND-COLOR: #f9f9f9;
+}
+gl.couleurgris{
+    COLOR: #35246A;
+}

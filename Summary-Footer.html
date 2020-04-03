@@ -1,0 +1,27 @@
+<table border="0" cellspacing="0" cellpadding="0" width="780">
+<tr>
+    <td width="380"></td>
+    <td>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td width="300"><img width="298" height="21" src="<?php echo $imgsummarytotal; ?>"></td>
+            <td width="100" align="center"><div style="border: 1px solid black; padding: 4px; margin: 1px;"><strong>&nbsp;<?php echo $cost; ?></strong> $</div></td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</br>
+<?php echo $labelsendsummaryform; ?><br/><br/>
+<?php echo $labelkeepacopy; ?><br/>
+<?php
+if ($ua['name'] == "Mozilla Firefox") addBR(0);
+else addBR(5);
+?>
+<table border="0" cellspacing="0" cellpadding="3" width="780">
+<tr>
+    <td width="315" valign="top">Formulaire <?php echo $page; ?></td>
+    <td><img src="<?php echo $imgpatcanlogo; ?>" width="100" height="60"></td>
+    <td width="315" valign="top" align="right"><strong><?php echo $labelformrevisiondate; ?></strong></td>
+</tr>
+</table>

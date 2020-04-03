@@ -1,0 +1,171 @@
+body {
+    font-family: arial, helvetica;
+    font-size: 12px;
+    color: #413930;
+    margin: 10px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+img {
+float:left;
+border: none;
+margin:0px 0px 5px 10px;
+}
+
+.title{
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.4em;
+    margin-left: 5px;
+}
+h3{
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+h4{
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+
+ul li {
+    margin-left: 15px;
+}
+
+.title1{
+    font-size: 1.4em;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+a{
+    color: #0000CD;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #413930;
+    text-decoration: none;
+}
+
+.highlight {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+table
+{
+    font-size: 12px;
+}
+
+table th
+{
+    font-size: 9px;
+    border-width: thin;
+    border-style: none inset solid none;
+    border-color: #C0C0C0;
+    background-color: lightgray; /* bleu claire #D8E4E8 */
+}
+
+.action {
+    font-size: 14px;
+    border-style: none;
+}
+
+table.editform {
+    border-width: thin;
+    border-style: solid;
+    border-color: gray;
+}
+
+.boxsource {
+    border-style: dotted;
+    border-color: lightblue;
+    border-width: thin;
+}
+
+#fview {
+    border:1px solid darkblue;
+    width:500px;
+    padding:15px;
+    background-color: #f8f8f8;
+}
+.criteria {
+    border:1px solid lightblue;
+    border-width: thin;
+}
+
+div.container
+{
+    width:100%;
+    margin:0px;
+    border:1px solid gray;
+    line-height:140%;
+}
+div.header,div.footer
+{
+    padding:0.5em;
+    color:white;
+    /* background-color: #015287;*/
+    background-color: darkblue;
+    clear:left;
+}
+
+div.left
+{
+    float:left;
+    width:140px;
+    height:400px;
+    border-right:1px solid gray;
+    padding:1px;
+    padding:1em;
+}
+
+div.content
+{
+    margin-left:160px;
+    padding:1em;
+}
+
+div.contentonly
+{
+    margin-left:60px;
+    padding:1em;
+}
+
+fieldset#summaryfset { 
+    display: block;
+    width:270px;
+    margin-left: 20px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+
+h1.header
+{
+    padding:0;
+    margin:0px;
+}
+
+
+@media print {
+    .noprint { display: none; }
+}
+
+/*
+    chocolat background-color: #C8B898 ;
+    grispale background-color: #F8F8F8;
+    bleubell background-color: #015287;
+    bleupastel background-color: #D1DBF3;
+*/
