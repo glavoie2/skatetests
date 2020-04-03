@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/glisapps/public_html/skatetests/
+    - /bin/cp index.php $DEPLOYPATH
